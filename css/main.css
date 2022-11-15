@@ -1,0 +1,68 @@
+* {
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/sea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  background: linear-gradient(113deg, rgba(0,248,255,1) 26%, rgba(249,255,0,1) 75%);
+  animation-name: SeaBoll ;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+
+@keyframes SeaBoll {
+  0% {
+    transform: translate(0);
+  }
+
+  10% {
+    transform: translate(300px, 0);
+  }
+
+  20% {
+    transform: translate(300px, 200px);
+  }
+
+  30% {
+    transform: translate(1000px, 200px);
+  }
+
+  40% {
+    transform: translate(1000px, 400px);
+  }
+
+  50% {
+    transform: translate(700px, 400px);
+  }
+
+  60% {
+    transform: translate(700px, 300px);
+  }
+
+  70% {
+    transform: translate(300px, 300px);
+  }
+
+  80% {
+    transform: translate(150px, 150px);
+  }
+
+  90% {
+    transform: translate(0px, 200px);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
